@@ -35,9 +35,9 @@ class process:
             self.send(msg)
 
     def callback(self, ch, method, properties, body):
-        time.sleep(1)
         print('Node', self.id, 'received', body.decode('utf-8'))
         getattr(self, body.split()[0].decode('utf-8'))(body)
+        time.sleep(1)
 
     def basic(self, msg):
         print('Node', self.id, 'leader', self.leader_id)
