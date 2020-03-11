@@ -1,3 +1,3 @@
 # Ring leader election
 
-Ring-structured distributed network based on rabbittmq queues with failover
+Ring-structured **distributed** system  with **failover** based on *RabbitMQ* queues
